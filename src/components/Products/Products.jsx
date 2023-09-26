@@ -10,7 +10,7 @@ const Products = () => {
     // .catch((err) => console.error(err));
   }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-20 mt-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-4 gap-4 sm:mx-20 mt-6">
       {products.map((product) => (
         <Product product={product} key={product.id}></Product>
       ))}
